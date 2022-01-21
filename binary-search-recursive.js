@@ -4,6 +4,15 @@
  * @return {number}
  */
 
+/**This is a recursive solution. But an iterative one would be better.
+3 advantages of Iterative over Recursive:
+
+1)Recursion comes with overhead of saving current state. Hence, It's slower.
+2)Recursion uses internal Stack space. So, Space Complexity of Recursive Approach is O(Log(n)) whereas Iterative is O(1)
+3)If the array length is very large, Recursive program can crash due to Stack Overflow Error.
+*/
+
+
 var search = function(nums, target) {
     let len = nums.length;
     let start = 0;
